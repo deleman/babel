@@ -1,0 +1,24 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rm -r -f dist",
+    "start": "node bin/dev",
+    "build": "npm run clear && mkdir dist && babel server -s -d dist",
+    "production": "npm run build && node bin/production"
+
+  },
+  "author": "mohammad",
+  "license": "ISC"
+}
